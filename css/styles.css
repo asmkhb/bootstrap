@@ -1,0 +1,73 @@
+.banner .container{
+	background-image: url(../images/bg.png);
+	height: 400px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.banner-content{
+	padding-top: 70px;
+	width: 300px;
+	margin-left: 100px;
+	margin-top: 0px;
+	margin-bottom: 70px;
+}
+.card{
+	position: relative;
+
+}
+.hvr i .fas .fa-ribbo{
+	position: absolute;
+	;
+}
+.hvr span{
+	position: absolute;
+	background: #0d6efd;
+    color: #ffffff;
+    padding: 2px 5px;
+    top: 0;
+    left: 0;
+    transform: translate(20px, 20px);
+}
+.hvr a{
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate(86%, 350%);
+}
+svg.svg-inline--fa.fa-ribbon.fa-w-14 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-20px, 20px);
+}
+.hvr::after{
+	content:"" ;
+	background: blue;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	opacity: .0;
+
+
+
+}
+.hvr:hover .hvr img{
+	transition: scale(2.1);
+}
+.hvr:hover::after{opacity: 1;}
+.hvr:hover a{
+	z-index:1 ;
+	background: white;
+	color: blue;
+	transform: translate(86%, 300%);
+	transition: all 0.5s;
+}
+.hvr:hover svg.svg-inline--fa.fa-ribbon.fa-w-14{
+	z-index: 1;
+	color: white;
+}
